@@ -1,0 +1,21 @@
+.root {
+  display: block;
+  padding: 150px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.smile {
+  font-size: 50px;
+}
+
+@media (max-width: 500px) {
+  .root {
+    padding: 100px 10px;
+
+    h1 {
+      line-height: 1;
+      margin-bottom: 5%;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@media (max-width: 767px) {
+  .root {
+    display: none;
+  }
+}
+
+.root {
+  width: 500px;
+  border: 1px solid rgba(0, 0, 0, 0.055);
+
+  border-radius: 15px;
+  position: relative;
+
+  .input {
+    padding: 10px 20px 10px 50px;
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+
+    font-size: 22px;
+    border: none;
+
+    &:focus {
+      border: 1px solid rgba(0, 0, 0, 0.184);
+    }
+  }
+
+  .search {
+    display: block;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: 15px;
+    height: 30px;
+  }
+
+  .close {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 30px;
+    opacity: 0.6;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
