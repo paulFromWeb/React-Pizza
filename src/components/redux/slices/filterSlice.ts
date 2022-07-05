@@ -48,7 +48,6 @@ export const filterSlice = createSlice({
             state.activePage = action.payload
         },
         setFilters(state, action) {
-            console.log(action.payload, "this");
             state.activePage = Number(action.payload.activePage);
             state.activeCategory = Number(action.payload.activeCategory);
             state.checked = action.payload.checked;

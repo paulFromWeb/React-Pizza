@@ -17,7 +17,6 @@ const Sort: React.FC = () => {
   useEffect(() => {
     const clickOutside = (e: any) => {
       if (!e.path.includes(sortRef.current)) {
-        console.log('here');
         setVisible(false);
       }
     };

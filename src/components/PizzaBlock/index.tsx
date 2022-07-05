@@ -34,7 +34,6 @@ const PizzaBlock: React.FC<PizzaBlockProps> = ({
 
   const dispatch = useDispatch();
   const addToCart = () => {
-    console.log(title, price);
     dispatch(
       addItems({
         title,

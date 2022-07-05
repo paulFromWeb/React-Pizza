@@ -13,14 +13,12 @@ const Pagination: React.FC = () => {
       dispatch(setActivePage(activePage + 1));
     }
   };
-  console.log(activePage);
   return (
     <div className={styles.root}>
       <span className={styles.changeButtons} onClick={() => addPage('back')}>
         {'<'}
       </span>
       {buttons.map((button, i) => {
-        console.log(activePage === i + 1);
         return (
           <span
             onClick={() => dispatch(setActivePage(i + 1))}

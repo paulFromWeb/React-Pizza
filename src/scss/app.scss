@@ -1,7 +1,7 @@
-@import "variables";
-@import "libs/normalize";
+@import 'variables';
+@import 'libs/normalize';
 
-@import "components/all";
+@import 'components/all';
 
 body {
   background-color: $background;
@@ -18,7 +18,7 @@ body {
 
 @media (max-width: 500px) {
   .wrapper {
-    width: calc(100vw - 15px);
+    width: calc(100vw - 40px);
     margin: 25px auto;
   }
 }
@@ -34,7 +34,7 @@ body {
 }
 
 .content {
-  padding: 5% 0;
+  padding: 5%;
   display: flex;
   justify-content: space-between;
 
@@ -187,7 +187,10 @@ body {
 
   @media (max-width: 500px) {
     .cart__clear {
-      margin: 0 0 0 15%;
+      margin: 0 0 0 5%;
+    }
+    .cart__clear span {
+      font-size: 14px;
     }
   }
 
@@ -309,7 +312,7 @@ body {
 
     @media (max-width: 500px) {
       .cart__item-price b {
-        font-size: 18px;
+        font-size: 16px;
       }
 
       .cart__item-count b {
@@ -457,5 +460,60 @@ body {
 @media (max-width: 500px) {
   .cart--empty {
     width: 100%;
+  }
+  .cart__item-info p {
+    font-size: 14px;
+  }
+  .cart__item-count {
+    width: 20%;
+  }
+  .cart__item-info {
+    margin: 0 0 0 2%;
+  }
+  .cart__bottom-details {
+    span:first-child {
+      width: 45%;
+    }
+    span:last-child {
+      text-align: right;
+    }
+  }
+  .cart__bottom-buttons div {
+    margin: 0 0 0 5%;
+  }
+  .cart__bottom-buttons .pay-btn {
+    padding: 10px;
+  }
+  .cart .cart__bottom-buttons span {
+    font-size: 12px;
+  }
+  .cart .content__title {
+    font-size: 24px;
+  }
+  .content {
+    flex-direction: column;
+
+    &__Info {
+      padding: 8% 0;
+      text-align: center;
+      & h1 {
+        line-height: 1;
+        margin: 0 0 5% 0;
+        font-size: 36px;
+      }
+      & h2 {
+        font-size: 24px;
+        line-height: 22px;
+        margin: 0 0 5% 0;
+        text-align: justify;
+      }
+    }
+    &__Image {
+      width: 100%;
+      margin: 0 auto;
+      img {
+        width: 100%;
+      }
+    }
   }
 }

@@ -54,7 +54,6 @@ export const cartSlice = createSlice({
             }
         },
         removeItems: (state, action) => {
-            debugger
             state.items = state.items.filter((item) => {
                 if (item.id === action.payload.id && item.type === action.payload.type && item.size === action.payload.size) {
                     state.totalPrice -= (item.price * item.count);
